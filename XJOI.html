@@ -1,0 +1,1338 @@
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		showProcessingMessages: false,
+		tex2jax: {
+			inlineMath: [["$", "$"], ["\\\\(", "\\\\)"],["\\(","\\)"],["[tex]","[/tex]"]],
+			processEscapes:true
+		},
+		menuSettings: {
+			zoom: "Hover"
+		}
+	});
+</script>
+
+<script type="text/javascript" src="/static/lib/MathJax/MathJax.js?config=default"></script><style>
+ .divScroll{
+     OVERFLOW:auto;
+        scrollbar-face-color: #FFFFFF;
+        scrollbar-shadow-color: #D2E5F4;
+        scrollbar-highlight-color: #D2E5F4;
+        scrollbar-3dlight-color: #FFFFFF;
+        scrollbar-darkshadow-color: #FFFFFF;
+        scrollbar-track-color: #FFFFFF; 
+      scrollbar-arrow-color: #D2E5F4";
+        }
+pre{
+white-space: pre-wrap;       
+white-space: -moz-pre-wrap;  
+white-space: -pre-wrap;      
+white-space: -o-pre-wrap;    
+word-wrap: break-word;       
+}
+</style>
+
+
+
+<body>
+	<!DOCTYPE html>
+<head>
+
+	
+
+
+
+<META content="IE=7.0000"
+http-equiv="X-UA-Compatible">
+<title>XJOI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="//cdn.ckeditor.com/4.5.3/full/ckeditor.js"></script>
+
+<script type="text/javascript" src="/static/Scripts/shCore.js"></script>
+<script type="text/javascript" src="/static/Scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/static/Scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/static/Scripts/shBrushDelphi.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/Styles/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script type="text/javascript">SyntaxHighlighter.config.tagName='textarea'; </script>
+
+
+<meta name=GENERATOR content="MSHTML 8.00.6001.19019">
+
+
+<script src="/static/js/jquery-1.5.1.min.js" type=text/javascript> </script>
+</head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+
+div div div.r1{margin: 0 5px}
+div div div.r2{margin: 0 3px}
+div div div.r3{margin: 0 2px}
+div div div.r4{margin: 0 1px;height: 2px}
+
+div#ver_line{width:1px;height:20px;background:#9BD1FA;}
+div#ver_white_line{width:1px;height:20px;background:black;}
+
+
+
+
+div#cornsilk1{ background: #FFFFFF;text-align:right;}
+div#cornsilk1 p{padding:2px;}
+
+div#cornsilk1 div.rtop, div#cornsilk1 div.rbottom{display:block;background: #FFF;font-size:0;}
+div#cornsilk1 div.rtop div,div#cornsilk1 div.rbottom div{display:block;height: 1px;overflow: hidden; background: #FFF8DC;}
+
+
+div#problem_yellow{ background: #FFD700;text-align:center;}
+div#problem_yellow p{padding:2px;}
+
+div#problem_yellow div.rtop, div#problem_yellow div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problem_yellow div.rtop div,div#problem_yellow div.rbottom div{display:block;height: 1px;overflow: hidden; background: #FFD700}
+
+div#problem_gray{ background: #9D9D9D;text-align:center;}
+div#problem_gray p{padding:2px;}
+
+div#problem_gray div.rtop, div#problem_gray div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problem_gray div.rtop div,div#problem_gray div.rbottom div{display:block;height: 1px;overflow: hidden; background: #9D9D9D}
+
+div#problem{ background: #D9FFFF;text-align:center;}
+div#problem p,div#problem a{padding:2px;}
+
+div#problem div.rtop, div#problem div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problem div.rtop div,div#problem div.rbottom div{display:block;height: 1px;overflow: hidden; background: #D9FFFF}
+
+div#problem_red{ background: #FF7744;text-align:center;}
+div#problem_red p,div#problemlist a{padding:2px;}
+
+div#problem_red div.rtop, div#problem_red div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problem_red div.rtop div,div#problem_red div.rbottom div{display:block;height: 1px;overflow: hidden; background: #FF7744}
+
+div#problem_green{ background: #79FF79;text-align:center;}
+div#problem_green p,div#problemlist a{padding:2px;}
+
+div#problem_green div.rtop, div#problem_green div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problem_green div.rtop div,div#problem_green div.rbottom div{display:block;height: 1px;overflow: hidden; background: #79FF79}
+
+
+div#problemlist{ background: #D9FFFF;width:800px; text-align:center;}
+div#problemlist p,div#problemlist a{padding:2px;}
+
+div#problemlist div.rtop, div#problemlist div.rbottom{display:block;background: #FFF;font-size:0;}
+div#problemlist div.rtop div,div#problemlist div.rbottom div{display:block;height: 1px;overflow: hidden; background: #D9FFFF}
+
+
+
+div#level_normal{ margin: 0 10%;width:60px; height:30px;text-align:center;}
+div#level_normal p,div#level_normal a{padding:2px;}
+
+div#level_normal div.rtop, div#level_normal div.rbottom{display:block;background: #FFF;;font-size:0;}
+div#level_normal div.rtop div,div#level_normal div.rbottom div{display:block;height: 1px;overflow: hidden; background: #9BD1FA;}
+
+div#level_selected{ margin: 0 10%;width:60px; height:30px;text-align:center;}
+div#level_selected p,div#level_selected a {padding:2px;}
+
+div#level_selected div.rtop, div#level_selected div.rbottom{display:block;background: #FFF;font-size:0;}
+div#level_selected div.rtop div,div#level_selected div.rbottom div{display:block;height: 1px;overflow: hidden; background: #FFFF93}
+
+div#level_locked{ margin: 0 10%;width:60px; height:30px;text-align:center;}
+div#level_locked p,div#level_locked a{padding:2px;}
+
+div#level_locked div.rtop, div#level_locked div.rbottom{display:block;background: #FFF;font-size:0;}
+div#level_locked div.rtop div,div#level_locked div.rbottom div{display:block;height: 1px;overflow: hidden; background: #9D9D9D}
+
+
+.tit {
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 72px;
+}
+body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,emBED{padding:0; margin:0;}
+body {font-family:\5B8B\4F53,Arial Narrow,arial,serif;background:#ffffff;font-size:16px;}
+li{list-style-type:none;}
+a{text-decoration:none;color:#333;}
+a:hover{text-decoration:underline;}
+/*main nav*/
+#nav{ background:url('/static/images/nav_li_bg.jpg') repeat-x top; height:37px; position:relative;width:988px; margin:20px auto;}
+#nav .l{ background:url('/static/images/nav_li_left.jpg') no-repeat top; height:37px;width:78px; float:left}
+#nav .r{width:82px;background:url('/static/images/nav_li_right.jpg') no-repeat right top;height:37px;float:left;}
+#nav li { float:left;}
+#nav li .v a{ width:138px;height:37px; line-height:32px; display:block; color:#FFF;float:left;font-weight:bold;text-decoration:none;text-align:center;}
+#nav li .v a:hover,#nav li .v .sele{width:138px;background:url('/static/images/nav_li_hover.jpg') no-repeat top;color:#fff;height:37px;line-height:37px;color:#000000;}
+/*kind_menu*/
+.kind_menu { height:30px;line-height:30px;vertical-align:middle; position:absolute;top:37px;left:0;text-align:left; display:none;color:#333;font-size:12px;}
+.kind_menu a {color:#333; background:url('/static/images/sub_dot.jpg') no-repeat left 14px;float:left; text-align:center;padding:0 10px;font-size:12px;text-decoration:none;}
+.kind_menu a:hover {color:#000;text-decoration:none;}
+/*kind_menu postion*/
+#Layer1{width:400px;left:60px;}
+#Layer2{width:300px;left:195px;}
+#Layer3{width:400px;left:385px;}
+#Layer4{width:400px;left:500px;}
+#Layer5{width:400px;left:640px;}
+#Layer6{width:560px;left:800px;}
+.conts{
+visibility:hidden
+}
+.tab{
+border-top:solid thin #E0E0E0;
+border-right:solid thin gray;
+border-left:solid thin #E0E0E0;
+font-family:Verdana;
+font-size:10pt;
+text-align:center;
+font-weight:normal
+}
+.selTab{
+border-left:solid thin white;
+border-top:solid thin white;
+border-right:solid thin black;
+font-weight:bold;
+text-align:center
+}
+</style>
+
+
+<body>
+<div align="center">
+<table width="988" border="0">
+	<tr valign=bottom align=center><td>
+    	<table width="980" border="0" cellpadding="0" cellspacing="0">
+  			<tr valign=bottom>
+      	 	<td width="10%"><img src="/static/images/xjoi.png" width="120" height="120" /></td>
+    		<td width="25%" class="tit">XJOI</br>
+    		<font style="font-family:'微软雅黑';FONT-SIZE: 10pt;font-weight:bold; ">
+<div id="view-time"></div>
+<div id="log"></div>
+<script type="text/javascript">
+if (typeof XMLHttpRequest == 'undefined') {
+    window.XMLHttpRequest = function() {
+        var _ = ['Microsoft.XMLHTTP', 'Msxml2.XMLHTTP'];
+        for (var i = 0, l = _.length; i < l; i++) {
+            try {
+                return new ActiveXObject(_[i]);
+            } catch(e) {}
+        }
+    };
+}
+
+var serverDate = function(fn) {
+	var B = new XMLHttpRequest();
+	B.onreadystatechange = function() { 
+		B.readyState == 4 && fn(new Date(B.getResponseHeader('Date')))};
+		B.open('HEAD', '/?_=' + (-new Date));
+		B.send(null);
+	};
+
+	Date.prototype.format = function() {
+	    return this.getFullYear() + '-'
+	    + ('0' + (this.getMonth() + 1)).slice(-2) + '-'
+	    + ('0' + (this.getDate())).slice(-2) + ' '
+	    + ('0' + (this.getHours())).slice(-2) + ':'
+	    + ('0' + (this.getMinutes())).slice(-2) + ':'
+	    + ('0' + (this.getSeconds())).slice(-2);
+	};
+	serverDate(function(webTime) {
+	    var view = document.getElementById('view-time'), diff = webTime - new Date();
+	    view.innerHTML = webTime.format();
+	    setInterval(function() {
+	        view.innerHTML = (webTime.setTime(diff + new Date() * 1), webTime.format());
+	    }, 100);
+});
+</script>
+</font></td>
+    		<td width="65%">
+    			<div id="cornsilk1">
+				<div class="rtop"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+				<table width="100%">
+				<tr>
+					<td width="70%"></td>
+					<td width="30%" align="center">
+							欢迎你！qinyuyang					</td>
+				</tr>
+				<tr>
+					<td width="70%"></td>
+					<td width="30%" align="center">
+							<a href="/logout">退出</a>
+							<a href="/user/message">信息</a>
+					</td>
+				</tr>
+								<tr>
+					<td width="70%"></td>
+					<td width="30%" align="center">
+						通过125题
+					</td>
+				</tr>
+				<tr>
+					<td width="70%"></td>
+					<td width="30%" align="center">
+						提交465题
+					</td>
+				</tr>
+				</table>
+				<div class="rtop"><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1"></div></div>
+				</div>
+            </td>
+  			</tr>
+  			
+		</table>
+    </td></tr>
+    <tr><td>
+		<table width="100%" border="0" align=center cellpadding="0" cellspacing="0" class="zh">
+        <tr align="center"> <td>
+        	<DIV id=nav>
+        		<DIV class=l></DIV>
+				<UL class=c>
+  				<LI>
+            		<SPAN class=v><A href="/">首页</A></SPAN> 
+  					<DIV class=kind_menu id="Layer1">欢迎来到学军中学OnlineJudge</DIV>
+            	</LI>
+  				<LI>
+            		<SPAN class=v><A href="/problemlist">题库</A></SPAN> 
+  					<DIV class=kind_menu id="Layer2">
+  						<A href="/problemlist">题库</A>
+  						<A href="/submit">提交</A> 
+  						<A href="/status">状态</A>
+                        <A href="/user/ranklist">排名</A>
+            	    </DIV>
+            	</LI>
+  				<LI>
+            		<SPAN class=v><A href="/contests">比赛</A></SPAN> 
+  					<DIV class=kind_menu id="Layer3"> 
+  						<A href="/precontests">初赛</A> 
+  						<A href="/contests">OI</A>
+            	    </DIV>
+            	</LI>
+  				<LI>
+  				  				<SPAN class=v><A href="/user/profile/qinyuyang">用户</A></SPAN> 
+  					<DIV class="kind_menu" id="Layer4">
+  						<A href="/user/change_profile">修改资料</A> 
+  						<A href="/user/change_password">修改密码</A>
+            	    </DIV>
+            	</LI>
+  						            	<LI>
+            		<SPAN class=v><A href="/oj/mathsource">资源</A></SPAN> 
+  					<DIV class=kind_menu id="Layer5">
+            	    	<A href="/discuss">讨论</A> 
+            	        <A href="/oj/mathsource">资料</A> 
+            	        <A href="/">课程</A>
+            	    </DIV>
+            	</LI>
+            	<LI>
+            		<SPAN class=v><A href="/news">新闻</A></SPAN> 
+  					<DIV class=kind_menu id="Layer6">
+            	    	<A href="/news">新闻列表</A>
+            	    </DIV>
+            	</LI>
+  				</UL>
+ 				<DIV class=r></DIV>
+			</DIV><!--nav-->
+        
+			<SCRIPT  type="text/javascript">
+    			var site_url = window.location.href.toLowerCase();	
+				switch (true) {		
+					default :
+						$("#nav li").attr("class","");
+						$("#nav li").eq(0).attr("class","nav_lishw");
+						$(".nav_lishw .v a").attr("class","sele");
+						$(".nav_lishw .kind_menu").show();
+				} 
+				$("#nav li").hover(
+					function(){
+						clearTimeout(setTimeout("0")-1);
+						$("#nav .kind_menu").hide(); 
+						$("#nav li .v .sele").attr("class","shutAhover");
+						$(this).attr("id","nav_hover")
+						$("#nav_hover .v a").attr("class","sele");
+						$("#nav_hover .kind_menu").show(); 
+					},
+					function(){
+							if($(this).attr("class") != "nav_lishw"){
+							$("#nav_hover .v .sele").attr("class","");
+							$("#nav_hover .kind_menu").hide(); 
+						}
+						$(this).attr("id","")
+						$("#nav li .v .shutAhover").attr("class","sele");
+						setTimeout(function(){
+							$(".nav_lishw .kind_menu").show();
+							$(".nav_lishw .v a").attr("class","sele");
+						},50); 
+					}
+				);	
+			</SCRIPT>
+    	</td> </tr>
+  		<tr height=20><td></td></tr>
+  		<tr><td align=center>
+    		<table width="900" border="0" cellspacing="0" cellpadding="0">
+  			<tr valign="top">
+        	<td width="100%" id = "main_div">
+				<table>
+	<tr>
+		<td>
+			<pre>
+提示：
+	1：请及时点击"提交"按钮以保存你的答案
+	2：对于多选题，请保证填入的选项字典序递增
+	3：答案批改采用匹配严格，请不要有多余的空格或其他符号
+	4：如果被误批了请前往讨论区或者联系管理员
+			</pre>
+			<h2>NOIP2012提高组初赛C++_</h2> </br>
+	比赛正在进行</br>
+ 
+	<!-- <textarea cols="100" rows="50" readonly="readonly">第十八届全国青少年信息学奥林匹克联赛初赛
+提高组C++语言试题 （竞赛时间：2012年10月13日14:30~16:30）
+选手注意：
+	试题纸共有15页，答题纸共有2页，满分100分。请在答题纸上作答，写在试题纸上的一律无效。
+	不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。
+一、单项选择题（共10题，每题1.5分，共计15分；每题有且仅有一个正确选项）
+1.目前计算机芯片（集成电路）制造的主要原料是（），它是一种可以在沙子中提炼出的物质。
+A.硅      B.铜     C.锗      D.铝
+2.（）是主要用于显示网页服务器或者文件系统的HTML文件内容，并让用户与这些文件交互的一种软件。
+A.资源管理器     B.浏览器      C.电子邮件     D.编译器
+3.目前个人电脑的（）市场占有率最靠前的厂商包括Intel、AMD等公司。
+A.显示器    B.CPU     C.内存     D.鼠标
+4.无论是TCP/IP模型还是OSI模型，都可以视为网络的分层模型，每个网络协议都会被归入某一层中。如果用现实生活中的例子来比喻这些“层”，以下最恰当的是( ）。
+A.中国公司的经理与伊拉克公司的经理交互商业文件
+[img]/images/pre_contest/189/4A.jpg[/img]
+[img]/images/pre_contest/239/A.jpg[/img]
+B.军队发布命令
+[img]/images/pre_contest/239/B.jpg[/img] 
+C.国际会议中，每个人都与他国地位对等的人直接进行会谈
+[img]/images/pre_contest/239/C.jpg[/img]
+D.体育比赛中，每一级比赛的优胜者晋级上一级比赛
+[img]/images/pre_contest/239/D.jpg[/img] 
+5.如果不在快速排序中引入随机化，有可能导致的后果是（）。
+A.数组访问越界            B.陷入死循环
+C.排序结果错误             D.排序时间退化为平方级
+6.1946年诞生于美国宾夕法尼亚大学的ENIAC属于（）计算机。
+A.电子管     B.晶体管        C.集成电路      D.超大规模集成电路
+7.在程序运行过程中，如果递归调用的层数过多，会因为（）引发错误。
+A.系统分配的栈空间溢出          B.系统分配的堆空间溢出
+C.系统分配的队列空间溢出      D.系统分配的链表空间溢出
+8.地址总线的位数决定了CPU可直接寻址的内存空间大小，例如地址总线为16位，其最大的可寻址空间为64KB。如果地址总线是32位，则理论上最大可寻址的内存空间为（）。
+A.128KB      B.1MB       C.1GB        D.4GB
+9.以下不属于目前3G（第三代移动通信技术）标准的是（）。
+A.GSM       B.TD-SCDMA       C.CDMA2000        D.WCDMA
+10.仿生学的问世开辟了独特的科学技术发展道路。人们研究生物体的结构、功能和工作原理，并将这些原理移植于新兴的工程技术之中。以下关于仿生学的叙述，错误的是（）。
+A.由研究蝙蝠，发明雷达         B.由研究蜘蛛网，发明因特网
+C.由研究海豚，发明声纳         D.由研究电鱼，发明伏特电池
+二、不定项选择题（共10题，每题1.5分，共计15分；每题有一个或多个正确选项，多选或少选均不得分）
+1.如果对于所有规模为n的输入，一个算法均恰好进行（）次运算，我们可以说该算法的时间复杂度为O(2^n)。
+A.2^(n+1)     B.3^n     C.n*2^n      D.2^(2n)
+2.从顶点A0出发，对有向图（  ）进行广度优先搜索（BFS）时，一种可能的遍历顺序是A0,A1,A2,A3,A4。
+[img]/images/pre_contest/189/12.jpg[/img]
+3.如果一个栈初始时为空，且当前栈中的元素从栈底到栈顶依次为a,b,c另有元素d已经出栈，则可能的入栈顺序有（）。
+A.a,b,c,d       B.b,a,c,d
+C.a,c,b,d         D.d,a,b,c
+4.在计算机显示器所使用的RGB颜色模型中，（）属于三原色之一。
+A.黄色       B.蓝色       C.紫色        D.绿色
+5.一棵二叉树一共有19个节点，其叶子节点可能有（）个。
+A.1      B.9      C.10        D.11
+6．已知带权有向图G上的所有权值均为正整数，记顶点u到顶点v的最短路径的权值为  。若  是图G上的顶点，且它们之间两两都存路径可达，则以下说法正确的有（   ）。
+[img]/images/pre_contest/239/16.jpg[/img]
+[img]/images/pre_contest/189/17.jpg[/img] 
+8．十进制下的无限循环小数（不包括循环节内的数字均为0成均为9的平凡情况），在二进制下有可能是（    ）。
+A．无限循环小数(不包括循环节内的数字均为0或均为9的平凡情）		
+B．无限不循环小数			
+C．有限小数					
+D．整数
+9．（     ）是目前互联网上常用的E-mail服务协议。
+A．HTTP 		B．FTP 		C．POP3 	 D．SMTP
+10．以下关于计算复杂度的说法中，正确的有（    ）。
+A．如果一个问题不存在多项式时间的算法，那它一定是NP类问题
+B．如果一个问题不存在多项式时间的算法，那它一定不是P类问题
+C．如果一个问题不存在多项式空间的算法，那它一定是NP类问题
+D．如果一个问题不存在多项式空间的算法，那它一定不是P类问题
+三、问题求解（共2题，每题5分，共计10分）
+1.本题中，我们约定布尔表达式只能包含p,q,r三个布尔变量，以及“与”（∧）、“或”（∨）、“非”（?）三种布尔运算。如果无论p,q,r如何取值，两个布尔表达式的值总是相同，则称它们等价。例如，(p∨q)∨r和p∨(q∨r)等价，p∨?p和q∨?q也等价；而p∨q和p∧q不等价。那么，两两不等价的布尔表达式最多有_________个。
+2.对于一棵二叉树，独立集是指两两互不相邻的节点构成的集合。例如，图1有5个不同的独立集（1个双点集合、3个单点集合、1个空集），图2有14个不同的独立集。那么，图3有_________个不同的独立集。
+[img]/images/pre_contest/189/32.jpg[/img]
+四、阅读程序写结果（共4题，每题8分，其中第3题的2个小题各4分，共计32分）
+1.
+#include<iostream>
+using namespace std;
+int n,i,temp,sum,a[100];
+int main() {
+	cin>>n;
+	for(i=1; i<=n; i++)
+		cin>>a[i];
+	for(i=1; i<=n-1; i++)
+		if(a[i]>a[i+1]) {
+			temp=a[i];
+			a[i]=a[i+1];
+			a[i+1]=temp;
+		}
+	for(i=n; i>=2; i--)
+		if(a[i]<a[i-1]) {
+			temp=a[i];
+			a[i]=a[i-1];
+			a[i-1]=temp;
+		}
+	sum=0;
+	for(i=2; i<=n-1; i++)
+		sum+=a[i];
+	cout<<sum/(n-2)<<endl;
+	return 0;
+}
+
+输入：
+8
+40 70 50 70 20 40 10 30
+输出：_________
+
+2.  #include<iostream>
+using namespace std;
+int n,i,ans;
+int gcd(int a,int b)
+{
+  if(a%b==0)
+   return b;
+  else
+   return gcd(b,a%b);
+}
+int main()
+{
+ cin>>n;
+ ans=0;
+ for(i=1;i<=n;i++)
+  if(gcd(n,i)==i)
+  ans++;
+ cout<<ans<<endl;
+}
+输入：120
+输出：_________
+
+#include<iostream>
+using namespace std;
+const int SIZE=20;
+int data[SIZE];
+int n,i,h,ans;
+void merge()
+{
+ data[h-1]=data[h-1]+data[h];
+ h--;
+ ans++;
+}
+int main()
+{
+ cin>>n;
+ h=1;
+ data[h]=1;
+ ans=0;
+ for(i=2;i<=n;i++)
+ {
+  h++;
+  data[h]=1;
+  while(h>1&&data[h]==data[h-1])
+  merge();
+  }
+ cout<<ans<<endl;
+}
+
+（1）
+输入：8
+输出：_________（4分）
+（2）
+输入：2012
+输出：_________（4分）
+
+4.   
+#include<iostream>
+#include<string>
+using namespace std;
+int lefts[20],rights[20],father[20];
+string s1,s2,s3;
+int n,ans;
+void calc(int x,int dep)
+{
+ ans=ans+dep*(s1[x]-'A'+1);
+ if(lefts[x]>=0)calc(lefts[x],dep+1);
+ if(rights[x]>=0)calc(rights[x],dep+1);
+}
+void check(int x)
+{
+ if(lefts[x]>=0)check(lefts[x]);
+ s3=s3+s1[x];
+ if(rights[x]>=0)check(rights[x]);
+}
+void dfs(int x,int th)
+{
+ if(th==n)
+{
+ s3="";
+ check(0);
+ if(s3==s2)
+ {
+  ans=0;
+  calc(0,1);
+  cout<<ans<<endl;
+  }
+ return;
+ }
+ if(lefts[x]==-1&&rights[x]==-1)
+ {
+  lefts[x]=th;
+  father[th]=x;
+  dfs(th,th+1);
+  father[th]=-1;
+  lefts[x]=-1;
+  }
+ if(rights[x]==-1)
+ {
+  rights[x]=th;
+  father[th]=x;
+  dfs(th,th+1);
+  father[th]=-1;
+  rights[x]=-1;
+  }
+ if(father[x]>=0)
+ dfs(father[x],th);
+ }
+int main()
+{
+ cin>>s1;
+ cin>>s2;
+ n=s1.size()
+ memset(lefts,-1,sizeof(lefts));
+ memset(rights,-1,sizeof(rights));
+ memset(father,-1,sizeof(father));
+ dfs(0,1);
+}
+输入：
+ABCDEF
+BCAEDF
+输出：_________
+
+五、完善程序（第1题第2空3分，其余每空2.5分，共计28分）
+1.（排列数）输入两个正整数n,m(1≤n≤20,1≤m≤n)，在1~n中任取m个数，按字典序从小到大输出所有这样的排列。例如
+输入：3 2
+输出：1 2
+      1 3
+      2 1
+      2 3
+      3 1
+      3 2
+#include<iostream>
+#include<cstring>
+Using  namespace  std;
+
+Const int SIZE=25;
+bool used[SIZE];
+int data[SIZE];
+int n,m,i,j,k;
+bool flag;
+
+int main()
+{
+ cin>>n>>m;
+ memset(used,false,sizeof(used));
+ for(i=1;i<=m;i++)
+ {
+  data[i]=i;
+  used[i]=true;
+  }
+ flag=true;
+ while(flag)
+ {
+  for(i=1;i<=m-1;i++)cout<<data[i]<<"";
+  cout<<data[m]<<endl;
+  flag=               ①          ;
+  for(i=m;i>=1;i--)
+  {
+     ②            ;
+   for(j=data[i]+1;j<=n;j++)if(!used[j])
+   {
+    used[j]=true;
+    data[i]=③          ;
+    flag=true;
+    break;
+    }
+  if(flag)
+ {
+  for(k=i+1;k<=m;k++)
+  for(j=1;j<=④         ;j++)
+  if(!used[j])
+  {
+   data[k]=j;
+   used[j]=true;
+   break;
+   }
+  ⑤          ;
+   }
+  }
+ }
+}
+2．(新壳栈)小Z设计了一种新的数据结构“新壳栈”。首先，它和传统的栈一样支持压入、弹出操作。此外，其栈顶的前c个元素是它的壳，支持翻转操作。其中，c>2是一个固定的正整数，表示壳的厚度。小Z还希望，每次操作，无论是压入、弹出还是翻转，都仅用与c无关的常数时间完成。聪明的你能帮助她编程实现“新壳栈”吗?
+程序期望的实现效果如以下两表所示。其中，输入的第一行是正整数c，之后每行输入都是一条指令。另外，如遇弹出操作时栈为空，或翻转操作时栈中元素不足c个，应当输出相应的错误信息。
+[img]/images/pre_contest/189/42.jpg[/img]
+[img]/images/pre_contest/189/422.jpg[/img]
+#include<iostream>
+using namespace std;
+const  int NSIZE=100000,
+CSIZE=1000;
+int n,c,r,tail,head,s[NSIZE],q[CSIZE];
+//数组s模拟一个栈，n为栈的元素个数
+//数组q模拟一个循环队列，tail为队尾的下标，head为队头的下
+bool direction,empty;
+
+int previous(int k)
+{
+ if(direction)
+ return((k+c-2)%c)+1;
+ else
+ return(k%c)+1;
+}
+
+int next(int k)
+{
+ if(direction)
+ ①          ;
+ else
+ return((k+c-2)%c)+1;
+}
+
+void push()
+{
+ int element;
+ cin>>element;
+ if(next(head)==tail){
+ n++;
+ ②        ;
+ tail=next(tail);
+ }
+ if(empty)
+ empty=false;
+ else
+ head=next(head);
+ ③=element;
+}
+void pop()
+{
+ if(empty){
+ cout<<"Error:the stack is empty!"<<
+ return;
+ }
+ cout<<④<<endl;
+ if(tail==head)
+ empty=true;
+ else{
+ head=previous(head);
+ if(n>0){
+ tail=previous(tail);
+ ⑤ =s[n];
+ n--;
+  }
+ }
+}
+
+void reverse()
+{
+ int temp;
+ if(⑥      ==tail){
+ direction=!direction;
+ temp=head;
+ head=tail;
+ tail=temp;
+}
+ else
+ cout<<"Error:less than"<<c<<"elements in the stack!"<<endl;
+}
+
+int main()
+{
+ cin>>c;
+ n=0;
+ tail=1;
+ head=1;
+ empty=true;
+ direction=true;
+ do{
+  cin>>r;
+  switch(r){
+  case 1:push();break;
+  case 2:pop();break;
+  case 3:reverse();break;
+  }
+ }while(r!=0);
+ return 0;
+}
+1. 
+
+
+2. 
+
+
+</textarea>-->
+	<div style="width:700px; height: 1000px; " class="divScroll"><pre>第十八届全国青少年信息学奥林匹克联赛初赛<br>提高组C++语言试题 （竞赛时间：2012年10月13日14:30~16:30）<br>选手注意：<br>	试题纸共有15页，答题纸共有2页，满分100分。请在答题纸上作答，写在试题纸上的一律无效。<br>	不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。<br>一、单项选择题（共10题，每题1.5分，共计15分；每题有且仅有一个正确选项）<br>1.目前计算机芯片（集成电路）制造的主要原料是（），它是一种可以在沙子中提炼出的物质。<br>A.硅      B.铜     C.锗      D.铝<br>2.（）是主要用于显示网页服务器或者文件系统的HTML文件内容，并让用户与这些文件交互的一种软件。<br>A.资源管理器     B.浏览器      C.电子邮件     D.编译器<br>3.目前个人电脑的（）市场占有率最靠前的厂商包括Intel、AMD等公司。<br>A.显示器    B.CPU     C.内存     D.鼠标<br>4.无论是TCP/IP模型还是OSI模型，都可以视为网络的分层模型，每个网络协议都会被归入某一层中。如果用现实生活中的例子来比喻这些“层”，以下最恰当的是( ）。<br>A.中国公司的经理与伊拉克公司的经理交互商业文件<br><img src="/images/pre_contest/189/4A.jpg" /><br><img src="/images/pre_contest/239/A.jpg" /><br>B.军队发布命令<br><img src="/images/pre_contest/239/B.jpg" /> <br>C.国际会议中，每个人都与他国地位对等的人直接进行会谈<br><img src="/images/pre_contest/239/C.jpg" /><br>D.体育比赛中，每一级比赛的优胜者晋级上一级比赛<br><img src="/images/pre_contest/239/D.jpg" /> <br>5.如果不在快速排序中引入随机化，有可能导致的后果是（）。<br>A.数组访问越界            B.陷入死循环<br>C.排序结果错误             D.排序时间退化为平方级<br>6.1946年诞生于美国宾夕法尼亚大学的ENIAC属于（）计算机。<br>A.电子管     B.晶体管        C.集成电路      D.超大规模集成电路<br>7.在程序运行过程中，如果递归调用的层数过多，会因为（）引发错误。<br>A.系统分配的栈空间溢出          B.系统分配的堆空间溢出<br>C.系统分配的队列空间溢出      D.系统分配的链表空间溢出<br>8.地址总线的位数决定了CPU可直接寻址的内存空间大小，例如地址总线为16位，其最大的可寻址空间为64KB。如果地址总线是32位，则理论上最大可寻址的内存空间为（）。<br>A.128KB      B.1MB       C.1GB        D.4GB<br>9.以下不属于目前3G（第三代移动通信技术）标准的是（）。<br>A.GSM       B.TD-SCDMA       C.CDMA2000        D.WCDMA<br>10.仿生学的问世开辟了独特的科学技术发展道路。人们研究生物体的结构、功能和工作原理，并将这些原理移植于新兴的工程技术之中。以下关于仿生学的叙述，错误的是（）。<br>A.由研究蝙蝠，发明雷达         B.由研究蜘蛛网，发明因特网<br>C.由研究海豚，发明声纳         D.由研究电鱼，发明伏特电池<br>二、不定项选择题（共10题，每题1.5分，共计15分；每题有一个或多个正确选项，多选或少选均不得分）<br>1.如果对于所有规模为n的输入，一个算法均恰好进行（）次运算，我们可以说该算法的时间复杂度为O(2^n)。<br>A.2^(n+1)     B.3^n     C.n*2^n      D.2^(2n)<br>2.从顶点A0出发，对有向图（  ）进行广度优先搜索（BFS）时，一种可能的遍历顺序是A0,A1,A2,A3,A4。<br><img src="/images/pre_contest/189/12.jpg" /><br>3.如果一个栈初始时为空，且当前栈中的元素从栈底到栈顶依次为a,b,c另有元素d已经出栈，则可能的入栈顺序有（）。<br>A.a,b,c,d       B.b,a,c,d<br>C.a,c,b,d         D.d,a,b,c<br>4.在计算机显示器所使用的RGB颜色模型中，（）属于三原色之一。<br>A.黄色       B.蓝色       C.紫色        D.绿色<br>5.一棵二叉树一共有19个节点，其叶子节点可能有（）个。<br>A.1      B.9      C.10        D.11<br>6．已知带权有向图G上的所有权值均为正整数，记顶点u到顶点v的最短路径的权值为  。若  是图G上的顶点，且它们之间两两都存路径可达，则以下说法正确的有（   ）。<br><img src="/images/pre_contest/239/16.jpg" /><br><img src="/images/pre_contest/189/17.jpg" /> <br>8．十进制下的无限循环小数（不包括循环节内的数字均为0成均为9的平凡情况），在二进制下有可能是（    ）。<br>A．无限循环小数(不包括循环节内的数字均为0或均为9的平凡情）		<br>B．无限不循环小数			<br>C．有限小数					<br>D．整数<br>9．（     ）是目前互联网上常用的E-mail服务协议。<br>A．HTTP 		B．FTP 		C．POP3 	 D．SMTP<br>10．以下关于计算复杂度的说法中，正确的有（    ）。<br>A．如果一个问题不存在多项式时间的算法，那它一定是NP类问题<br>B．如果一个问题不存在多项式时间的算法，那它一定不是P类问题<br>C．如果一个问题不存在多项式空间的算法，那它一定是NP类问题<br>D．如果一个问题不存在多项式空间的算法，那它一定不是P类问题<br>三、问题求解（共2题，每题5分，共计10分）<br>1.本题中，我们约定布尔表达式只能包含p,q,r三个布尔变量，以及“与”（∧）、“或”（∨）、“非”（?）三种布尔运算。如果无论p,q,r如何取值，两个布尔表达式的值总是相同，则称它们等价。例如，(p∨q)∨r和p∨(q∨r)等价，p∨?p和q∨?q也等价；而p∨q和p∧q不等价。那么，两两不等价的布尔表达式最多有_________个。<br>2.对于一棵二叉树，独立集是指两两互不相邻的节点构成的集合。例如，图1有5个不同的独立集（1个双点集合、3个单点集合、1个空集），图2有14个不同的独立集。那么，图3有_________个不同的独立集。<br><img src="/images/pre_contest/189/32.jpg" /><br>四、阅读程序写结果（共4题，每题8分，其中第3题的2个小题各4分，共计32分）<br>1.<br>#include&lt;iostream&gt;<br>using namespace std;<br>int n,i,temp,sum,a[100];<br>int main() {<br>	cin&gt;&gt;n;<br>	for(i=1; i&lt;=n; i++)<br>		cin&gt;&gt;a[i];<br>	for(i=1; i&lt;=n-1; i++)<br>		if(a[i]&gt;a[i+1]) {<br>			temp=a[i];<br>			a[i]=a[i+1];<br>			a[i+1]=temp;<br>		}<br>	for(i=n; i&gt;=2; i--)<br>		if(a[i]&lt;a[i-1]) {<br>			temp=a[i];<br>			a[i]=a[i-1];<br>			a[i-1]=temp;<br>		}<br>	sum=0;<br>	for(i=2; i&lt;=n-1; i++)<br>		sum+=a[i];<br>	cout&lt;&lt;sum/(n-2)&lt;&lt;endl;<br>	return 0;<br>}<br><br>输入：<br>8<br>40 70 50 70 20 40 10 30<br>输出：_________<br><br>2.  #include&lt;iostream&gt;<br>using namespace std;<br>int n,i,ans;<br>int gcd(int a,int b)<br>{<br>  if(a%b==0)<br>   return b;<br>  else<br>   return gcd(b,a%b);<br>}<br>int main()<br>{<br> cin&gt;&gt;n;<br> ans=0;<br> for(i=1;i&lt;=n;i++)<br>  if(gcd(n,i)==i)<br>  ans++;<br> cout&lt;&lt;ans&lt;&lt;endl;<br>}<br>输入：120<br>输出：_________<br><br>#include&lt;iostream&gt;<br>using namespace std;<br>const int SIZE=20;<br>int data[SIZE];<br>int n,i,h,ans;<br>void merge()<br>{<br> data[h-1]=data[h-1]+data[h];<br> h--;<br> ans++;<br>}<br>int main()<br>{<br> cin&gt;&gt;n;<br> h=1;<br> data[h]=1;<br> ans=0;<br> for(i=2;i&lt;=n;i++)<br> {<br>  h++;<br>  data[h]=1;<br>  while(h&gt;1&&data[h]==data[h-1])<br>  merge();<br>  }<br> cout&lt;&lt;ans&lt;&lt;endl;<br>}<br><br>（1）<br>输入：8<br>输出：_________（4分）<br>（2）<br>输入：2012<br>输出：_________（4分）<br><br>4.   <br>#include&lt;iostream&gt;<br>#include&lt;string&gt;<br>using namespace std;<br>int lefts[20],rights[20],father[20];<br>string s1,s2,s3;<br>int n,ans;<br>void calc(int x,int dep)<br>{<br> ans=ans+dep*(s1[x]-'A'+1);<br> if(lefts[x]&gt;=0)calc(lefts[x],dep+1);<br> if(rights[x]&gt;=0)calc(rights[x],dep+1);<br>}<br>void check(int x)<br>{<br> if(lefts[x]&gt;=0)check(lefts[x]);<br> s3=s3+s1[x];<br> if(rights[x]&gt;=0)check(rights[x]);<br>}<br>void dfs(int x,int th)<br>{<br> if(th==n)<br>{<br> s3="";<br> check(0);<br> if(s3==s2)<br> {<br>  ans=0;<br>  calc(0,1);<br>  cout&lt;&lt;ans&lt;&lt;endl;<br>  }<br> return;<br> }<br> if(lefts[x]==-1&&rights[x]==-1)<br> {<br>  lefts[x]=th;<br>  father[th]=x;<br>  dfs(th,th+1);<br>  father[th]=-1;<br>  lefts[x]=-1;<br>  }<br> if(rights[x]==-1)<br> {<br>  rights[x]=th;<br>  father[th]=x;<br>  dfs(th,th+1);<br>  father[th]=-1;<br>  rights[x]=-1;<br>  }<br> if(father[x]&gt;=0)<br> dfs(father[x],th);<br> }<br>int main()<br>{<br> cin&gt;&gt;s1;<br> cin&gt;&gt;s2;<br> n=s1.size()<br> memset(lefts,-1,sizeof(lefts));<br> memset(rights,-1,sizeof(rights));<br> memset(father,-1,sizeof(father));<br> dfs(0,1);<br>}<br>输入：<br>ABCDEF<br>BCAEDF<br>输出：_________<br><br>五、完善程序（第1题第2空3分，其余每空2.5分，共计28分）<br>1.（排列数）输入两个正整数n,m(1≤n≤20,1≤m≤n)，在1~n中任取m个数，按字典序从小到大输出所有这样的排列。例如<br>输入：3 2<br>输出：1 2<br>      1 3<br>      2 1<br>      2 3<br>      3 1<br>      3 2<br>#include&lt;iostream&gt;<br>#include&lt;cstring&gt;<br>Using  namespace  std;<br><br>Const int SIZE=25;<br>bool used[SIZE];<br>int data[SIZE];<br>int n,m,i,j,k;<br>bool flag;<br><br>int main()<br>{<br> cin&gt;&gt;n&gt;&gt;m;<br> memset(used,false,sizeof(used));<br> for(i=1;i&lt;=m;i++)<br> {<br>  data[i]=i;<br>  used[i]=true;<br>  }<br> flag=true;<br> while(flag)<br> {<br>  for(i=1;i&lt;=m-1;i++)cout&lt;&lt;data[i]&lt;&lt;"";<br>  cout&lt;&lt;data[m]&lt;&lt;endl;<br>  flag=               ①          ;<br>  for(i=m;i&gt;=1;i--)<br>  {<br>     ②            ;<br>   for(j=data[i]+1;j&lt;=n;j++)if(!used[j])<br>   {<br>    used[j]=true;<br>    data[i]=③          ;<br>    flag=true;<br>    break;<br>    }<br>  if(flag)<br> {<br>  for(k=i+1;k&lt;=m;k++)<br>  for(j=1;j&lt;=④         ;j++)<br>  if(!used[j])<br>  {<br>   data[k]=j;<br>   used[j]=true;<br>   break;<br>   }<br>  ⑤          ;<br>   }<br>  }<br> }<br>}<br>2．(新壳栈)小Z设计了一种新的数据结构“新壳栈”。首先，它和传统的栈一样支持压入、弹出操作。此外，其栈顶的前c个元素是它的壳，支持翻转操作。其中，c&gt;2是一个固定的正整数，表示壳的厚度。小Z还希望，每次操作，无论是压入、弹出还是翻转，都仅用与c无关的常数时间完成。聪明的你能帮助她编程实现“新壳栈”吗?<br>程序期望的实现效果如以下两表所示。其中，输入的第一行是正整数c，之后每行输入都是一条指令。另外，如遇弹出操作时栈为空，或翻转操作时栈中元素不足c个，应当输出相应的错误信息。<br><img src="/images/pre_contest/189/42.jpg" /><br><img src="/images/pre_contest/189/422.jpg" /><br>#include&lt;iostream&gt;<br>using namespace std;<br>const  int NSIZE=100000,<br>CSIZE=1000;<br>int n,c,r,tail,head,s[NSIZE],q[CSIZE];<br>//数组s模拟一个栈，n为栈的元素个数<br>//数组q模拟一个循环队列，tail为队尾的下标，head为队头的下<br>bool direction,empty;<br><br>int previous(int k)<br>{<br> if(direction)<br> return((k+c-2)%c)+1;<br> else<br> return(k%c)+1;<br>}<br><br>int next(int k)<br>{<br> if(direction)<br> ①          ;<br> else<br> return((k+c-2)%c)+1;<br>}<br><br>void push()<br>{<br> int element;<br> cin&gt;&gt;element;<br> if(next(head)==tail){<br> n++;<br> ②        ;<br> tail=next(tail);<br> }<br> if(empty)<br> empty=false;<br> else<br> head=next(head);<br> ③=element;<br>}<br>void pop()<br>{<br> if(empty){<br> cout&lt;&lt;"Error:the stack is empty!"&lt;&lt;<br> return;<br> }<br> cout&lt;&lt;④&lt;&lt;endl;<br> if(tail==head)<br> empty=true;<br> else{<br> head=previous(head);<br> if(n&gt;0){<br> tail=previous(tail);<br> ⑤ =s[n];<br> n--;<br>  }<br> }<br>}<br><br>void reverse()<br>{<br> int temp;<br> if(⑥      ==tail){<br> direction=!direction;<br> temp=head;<br> head=tail;<br> tail=temp;<br>}<br> else<br> cout&lt;&lt;"Error:less than"&lt;&lt;c&lt;&lt;"elements in the stack!"&lt;&lt;endl;<br>}<br><br>int main()<br>{<br> cin&gt;&gt;c;<br> n=0;<br> tail=1;<br> head=1;<br> empty=true;<br> direction=true;<br> do{<br>  cin&gt;&gt;r;<br>  switch(r){<br>  case 1:push();break;<br>  case 2:pop();break;<br>  case 3:reverse();break;<br>  }<br> }while(r!=0);<br> return 0;<br>}<br>1. <br><br><br>2. <br><br><br></pre></div>
+		</td>
+		<td style="vertical-align: top; padding-top: 200px">
+	<table>
+
+				<tr>
+					<td>
+						<form action="/precontest/239" method="post">
+							<input type="hidden" name="already" />
+							<table>
+								<tr>
+									<td align="center">题号</td>
+									<td align="center">分数</td>
+									<td align="center">答案</td>
+								</tr>
+								<tr>
+									<td colspan="3" align="center">选择题</br>
+									</td>
+								</tr>
+				<tr>
+									<td>
+						1					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="0"
+										value="A" />	
+								
+					
+				<tr>
+									<td>
+						2					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="1"
+										value="B" />	
+								
+					
+				<tr>
+									<td>
+						3					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="2"
+										value="B" />	
+								
+					
+				<tr>
+									<td>
+						4					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="3"
+										value="A" />	
+								
+					
+				<tr>
+									<td>
+						5					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="4"
+										value="D" />	
+								
+					
+				<tr>
+									<td>
+						6					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="5"
+										value="A" />	
+								
+					
+				<tr>
+									<td>
+						7					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="6"
+										value="A" />	
+								
+					
+				<tr>
+									<td>
+						8					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="7"
+										value="D" />	
+								
+					
+				<tr>
+									<td>
+						9					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="8"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						10					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="9"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						11					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="10"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						12					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="11"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						13					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="12"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						14					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="13"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						15					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="14"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						16					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="15"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						17					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="16"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						18					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="17"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						19					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="18"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						20					</td>
+									<td>
+							1.5					</td>
+									<td>
+					
+						<input type="text" name="19"
+										value="" />	
+								
+					
+					</td>
+								</tr>
+
+
+
+
+
+
+
+
+								</tr>
+								<tr>
+									<td colspan="3" align="center">数学题</br>
+									</td>
+								</tr>
+				<tr>
+									<td>
+						1					</td>
+									<td>
+							5					</td>
+									<td>
+					
+						<input type="text" name="20"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						2					</td>
+									<td>
+							5					</td>
+									<td>
+					
+						<input type="text" name="21"
+										value="" />	
+								
+					
+					</td>
+								</tr>
+
+
+
+
+
+								</tr>
+								<tr>
+									<td colspan="3" align="center">看程序写输出</br>
+									</td>
+								</tr>
+				<tr>
+									<td>
+						1					</td>
+									<td>
+							8					</td>
+									<td>
+					
+						<input type="text" name="22"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						2					</td>
+									<td>
+							8					</td>
+									<td>
+					
+						<input type="text" name="23"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						3					</td>
+									<td>
+							4					</td>
+									<td>
+					
+						<input type="text" name="24"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						4					</td>
+									<td>
+							4					</td>
+									<td>
+					
+						<input type="text" name="25"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						5					</td>
+									<td>
+							8					</td>
+									<td>
+					
+						<input type="text" name="26"
+										value="" />	
+								
+					
+					</td>
+								</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								</tr>
+								<tr>
+									<td colspan="3" align="center">完善程序</br></td>
+								</tr>
+				<tr>
+									<td>
+						1					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="27"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						2					</td>
+									<td>
+							3					</td>
+									<td>
+					
+						<input type="text" name="28"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						3					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="29"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						4					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="30"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						5					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="31"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						6					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="32"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						7					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="33"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						8					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="34"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						9					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="35"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						10					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="36"
+										value="" />	
+								
+					
+				<tr>
+									<td>
+						11					</td>
+									<td>
+							2.5					</td>
+									<td>
+					
+						<input type="text" name="37"
+										value="" />	
+								
+					
+					</td>
+								</tr>
+
+
+
+
+
+
+
+
+
+								<tr>
+									<td colspan="3">
+
+						<input type="submit" value='提交' />
+					
+				</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</table>
+	</td>
+	</tr>
+</table>
+        	</td>
+	   	 	</tr>
+    <tr><td align=center>
+    	<table background="/static/images/101.jpg" width="980" height="360">
+        <tr><td align="center" valign="bottom">
+    		<div style="color:#999">
+      		XJOI Web<br>
+			推荐使用1024X768分辨率浏览本站<br>
+			<em></em><br>
+			<a href="/manage/manage_index.php">...</a>
+			<br>
+        	</div>
+        </td></tr>
+        </table>
+    </td></tr>
+</table>
+</div>
+<script class="javascript" src="/static/Scripts/shCore.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushCSharp.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushPhp.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushJScript.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushJava.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushVb.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushSql.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushXml.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushDelphi.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushPython.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushRuby.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushCss.js"></script>
+<script class="javascript" src="/static/Scripts/shBrushCpp.js"></script>
+<script class="javascript">
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+</body>
+</html>
+</body>
